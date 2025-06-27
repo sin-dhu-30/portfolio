@@ -1,0 +1,28 @@
+:root {
+  --dark-purple: #240046;
+  --deep-purple: #5a189a;
+  --vibrant-purple: #9d4edd;
+  --pink-magenta: #f72585;
+  --neon-pink: #ff00c8;
+  --text-light: #f8f9fa;
+}
+
+.home-wrapper {
+  background-color: var(--dark-purple);
+  color: var(--text-light);
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+  padding: 4rem 2rem;
+}
+
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+[data-aos].aos-animate {
+  opacity: 1;
+}

@@ -1,0 +1,124 @@
+:root {
+  --cream: #edf2cb;
+  --mint: #c5dca0;
+  --brown: #867666;
+  --dark-olive: #403d2b;
+  --light: #fefefe;
+}
+
+.contact-section {
+  padding: 5rem 2rem;
+  background-color: var(--cream);
+  text-align: center;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--dark-olive);
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px var(--brown);
+}
+
+.contact-subtext {
+  color: var(--brown);
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+/* LEFT INFO */
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--dark-olive);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 1.4rem;
+  color: var(--brown);
+}
+
+/* RIGHT FORM */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--mint);
+  border-radius: 8px;
+  background-color: var(--light);
+  color: var(--dark-olive);
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--brown);
+  outline: none;
+}
+
+.contact-form button {
+  padding: 0.9rem 1.5rem;
+  background-color: var(--dark-olive);
+  color: var(--cream);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--brown);
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .info-item {
+    justify-content: center;
+  }
+}
